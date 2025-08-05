@@ -1,0 +1,49 @@
+import pandas as pd
+# alternate way --from pandas import dataframe
+# create a data set
+data  = {
+    "Usernames": ["Lav", "Sou", "Aad"],
+    "Passwords": ["password", "Char123", "Allmight"]
+}
+#convert data into dataframe
+dataframe = pd.DataFrame(data) 
+
+print(dataframe)
+
+#write the DataFrame to csv file
+	
+dataframe.to_csv("./sample.csv", index=False)
+
+#read data from CSV file (Activity 18)
+input_data = pd.read_csv("./sample.csv")
+print(input_data)
+
+#Print the values only in the Usernames column
+print("===Usernames===")
+print(input_data["Usernames"])
+#Print the username and password of the second row
+print("Username: ", input_data["Usernames"][1], "Passwords: ", input_data["Passwords"][1])
+
+#Sort the Usernames column data in ascending order and print data
+print ("Usernames in ascenting order: ")
+print( input_data.sort_values("Usernames"))
+#Sort the Passwords column in descending order and print data
+print ("Passwords in descending order: ")
+print( input_data.sort_values("Passwords", ascending=False))
+
+#Adding new data
+new_row = pd.DataFrame({
+    "Usernames": ["Bham"],
+    "Passwords": ["Hello123"]
+})
+input_data = pd.concat([input_data, new_row]).reset_index(drop=True)
+print(input_data)
+#Adding to CSV files
+input_data.to_csv("./sample.csv", index=False)
+
+#Sort the Usernames column data in ascending order and print data.
+print ("Usernames in ascenting order: ")
+print( input_data.sort_values("Usernames"))
+#Sort the Passwords column in descending order and print data.
+print ("Passwords in descending order: ")
+print( input_data.sort_values("Passwords", ascending=False))

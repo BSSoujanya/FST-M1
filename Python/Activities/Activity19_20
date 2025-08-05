@@ -1,0 +1,36 @@
+import pandas as pd
+from pandas import ExcelWriter
+
+#Writing to excel file-Activity 19
+# Create a dictionary that will be used to create the DataFrame
+data = {
+	'FirstName':["Satvik", "Avinash", "Lahri"],
+	'LastName':["Shah", "Kati", "Rath"],
+	'Email':["satshah@example.com", "avinashK@example.com", "lahri.rath@example.com"],
+	'PhoneNumber':["4537829158", "4892184058", "4528727830"]
+}
+
+	
+# Create the DataFrame that will be written to the excel file
+dataframe = pd.DataFrame(data)
+ 
+# Print the dataframe
+print(dataframe)
+# Create an Excel write object
+writer = ExcelWriter("./sample.xlsx")
+#write the dataframe to excel file
+dataframe.to_excel(writer, sheet_name ="UserDetails", index=False)
+#close the writer
+writer.close()
+
+#Reading from excel file Activity 20
+input_data = pd.read_excel("./sample.xlsx",sheet_name="UserDetails")
+#Print the number of rows and columns
+print("===DataFrame Shape==")
+print("Rows: ", input_data.shape[0], "COlumns: ", input_data.shape[1])
+#Print the data in the emails column only
+print("======Email========")
+print(input_data["Email"])
+#Sort the data based on FirstName in ascending order and print the data
+print ("======Firstname in ascenting order: ====== ")
+print( input_data.sort_values("FirstName"))

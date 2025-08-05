@@ -1,0 +1,9 @@
+#Take user's name and age
+Username = input("Enter your name: ")
+age = int(input("Enter your age: "))
+
+#Calculate the yeat they turn into 100 years
+Year_turn_100 = 2025 + (100 - age)
+#print the result
+print(Username + "will turn 100 in the year  " + str(Year_turn_100))
+print(Username + "will turn 100 in the year  {}".format(Year_turn_100))

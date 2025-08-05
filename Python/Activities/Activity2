@@ -1,0 +1,6 @@
+Number = int(input("Enter a number: "))
+Modulus = Number % 2
+if Modulus > 0:
+    print("Entered value is odd number")
+else:
+    print("Entered value is even number")
