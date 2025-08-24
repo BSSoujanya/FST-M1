@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Selenium - testng framework" parallel="classes" thread-count="5">
+    <test name="Project">
+        <classes>
+            <class name="Project.TestActivity1" />
+            <class name="Project.TestActivity2" />
+            <class name="Project.TestActivity3" />
+            <class name="Project.TestActivity4" />
+            <class name="Project.TestActivity5" />
+            <class name="Project.TestActivity6" />
+            <class name="Project.TestActivity7" />
+            <class name="Project.TestActivity8" />
+            <class name="Project.TestActivity9" />
+        </classes>
+    </test>
+</suite>
