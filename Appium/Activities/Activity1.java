@@ -31,7 +31,7 @@ public class Activity1 {
 		UiAutomator2Options options = new UiAutomator2Options();
 		options.setPlatformName("android");
 		options.setAutomationName("UiAutomator2");
-		options.setApp("C:/Users/0006YW744/Desktop/FST/FST_Documents/Calculator.apk");
+		options.setApp("C:/Users/08400E744/Desktop/FST/FST_Documents/Calculator.apk");
 		
 		//Only for Android when we dont have apk file from dev so we use below
 		//options.setAppPackage("com.google.android.calulator");
@@ -70,3 +70,4 @@ public class Activity1 {
 		
 	}
 }
+
