@@ -16,7 +16,7 @@ import io.restassured.specification.ResponseSpecification;
 public class GitHubProjectTest {
 
 	// SSH key to test with
-	String sshkey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIEnTrnp3iQewoDGBFMETBUoApvW5Ilv8gyeoBO/Ndai";
+	String sshkey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPba4fKEbz8p9rJh2SNjRUrT2jsUIOhd5HRXnF+yKgNq";
 	// Temp variable to share id
 	int keyId;
 	// Declare the request and response specs
@@ -70,3 +70,4 @@ public class GitHubProjectTest {
 	}
 
 }
+
