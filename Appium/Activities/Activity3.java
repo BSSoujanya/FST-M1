@@ -25,7 +25,7 @@ public class Activity3 {
         UiAutomator2Options options = new UiAutomator2Options();
         options.setPlatformName("android");
         options.setAutomationName("UiAutomator2");
-        options.setApp("C:/Users/0006YW744/Desktop/FST/FST_Documents/Calculator.apk");
+        options.setApp("C:/Users/08400E744/Desktop/FST/FST_Documents/Calculator.apk");
         options.noReset();
 
         // Server Address
@@ -110,3 +110,4 @@ public class Activity3 {
         driver.quit();
     }
 }
+
